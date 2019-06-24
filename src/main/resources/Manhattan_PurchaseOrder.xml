@@ -1,0 +1,177 @@
+<?xml version="1.0"?>
+<tXML>
+  <Header>
+    <Source>PeopleSoft</Source>
+    <Action_Type>Update</Action_Type>
+    <Message_Type>PurchaseOrder</Message_Type>
+    <Company_ID>10003</Company_ID>
+  </Header>
+  <Message>
+    <Order>
+      <PurchaseOrderType>PO</PurchaseOrderType>
+      <BusinessUnit>10003</BusinessUnit>
+      <OrderId>NC0000045657</OrderId>
+      <ExtPurchaseOrderId></ExtPurchaseOrderId>
+      <IsPerishable>TRUE</IsPerishable>
+      <IsHazmat>FALSE</IsHazmat>
+      <IsCancelled>FALSE</IsCancelled>
+      <IsClosed></IsClosed>
+      <PickupStart>02/24/19 00:01</PickupStart>
+      <PickupEnd>02/24/19 23:59</PickupEnd>
+      <DeliveryStart>02/24/19 00:01</DeliveryStart>
+      <DeliveryEnd>02/24/19 23:59</DeliveryEnd>
+      <DestinationFacilityAliasId>QCCNC</DestinationFacilityAliasId>
+      <DestinationDockId>INBOUND</DestinationDockId>
+      <OriginFacilityAliasId>SOUTH MILLMAIN</OriginFacilityAliasId>
+      <OriginDockId>DEFAULT</OriginDockId>
+      <BusinessPartnerCode></BusinessPartnerCode>
+      <BillingMethodCode>0</BillingMethodCode>
+      <TransportationResponsibilityCode>VEN</TransportationResponsibilityCode>
+      <PoAutoCreateMethodCode></PoAutoCreateMethodCode>
+      <ProcessInfo>
+        <MoveType>CAR</MoveType>
+      </ProcessInfo>
+      <LineItem>
+        <LineItemId>1</LineItemId>
+        <ItemName>1051</ItemName>
+        <Description>MUSHROOM, FRESH</Description>
+        <ProductClassCode>FOOD</ProductClassCode>
+        <ProtectionLevelCode>REFR</ProtectionLevelCode>
+        <CommodityClassCode>FAK</CommodityClassCode>
+        <IsReadyToShip>FALSE</IsReadyToShip>
+        <IsCancelled>FALSE</IsCancelled>
+        <IsClosed></IsClosed>
+        <IsHazmat>FALSE</IsHazmat>
+        <ExtSysLineItemId></ExtSysLineItemId>
+        <Quantity>
+          <OrderQty>175</OrderQty>
+          <QtyUOM>PC</QtyUOM>
+        </Quantity>
+        <Weight>
+          <PlannedWeight>1925.0000</PlannedWeight>
+          <WeightUOM>LB</WeightUOM>
+        </Weight>
+        <Volume>
+          <PlannedVolume>109.3750</PlannedVolume>
+          <VolumeUOM>FT3</VolumeUOM>
+        </Volume>
+        <Size>
+          <Quantity>175</Quantity>
+          <QuantityUOM>FLT</QuantityUOM>
+        </Size>
+      </LineItem>
+    </Order>
+    <Order>
+      <PurchaseOrderType>PO</PurchaseOrderType>
+      <BusinessUnit>10003</BusinessUnit>
+      <OrderId>NC0000045658</OrderId>
+      <ExtPurchaseOrderId></ExtPurchaseOrderId>
+      <IsPerishable>TRUE</IsPerishable>
+      <IsHazmat>FALSE</IsHazmat>
+      <IsCancelled>FALSE</IsCancelled>
+      <IsClosed></IsClosed>
+      <PickupStart>02/24/19 00:01</PickupStart>
+      <PickupEnd>02/24/19 23:59</PickupEnd>
+      <DeliveryStart>02/24/19 00:01</DeliveryStart>
+      <DeliveryEnd>02/24/19 23:59</DeliveryEnd>
+      <DestinationFacilityAliasId>QCCNC</DestinationFacilityAliasId>
+      <DestinationDockId>INBOUND</DestinationDockId>
+      <OriginFacilityAliasId>CUSTOM PAKQCCNC</OriginFacilityAliasId>
+      <OriginDockId>DEFAULT</OriginDockId>
+      <BusinessPartnerCode></BusinessPartnerCode>
+      <BillingMethodCode>0</BillingMethodCode>
+      <TransportationResponsibilityCode>VEN</TransportationResponsibilityCode>
+      <PoAutoCreateMethodCode></PoAutoCreateMethodCode>
+      <ProcessInfo>
+        <MoveType>CAR</MoveType>
+      </ProcessInfo>
+      <LineItem>
+        <LineItemId>1</LineItemId>
+        <ItemName>1053</ItemName>
+        <Description>PEPPERS, GREEN (25 LBS.)</Description>
+        <ProductClassCode>FOOD</ProductClassCode>
+        <ProtectionLevelCode>REFR</ProtectionLevelCode>
+        <CommodityClassCode>FAK</CommodityClassCode>
+        <IsReadyToShip>FALSE</IsReadyToShip>
+        <IsCancelled>FALSE</IsCancelled>
+        <IsClosed></IsClosed>
+        <IsHazmat>FALSE</IsHazmat>
+        <ExtSysLineItemId></ExtSysLineItemId>
+        <Quantity>
+          <OrderQty>100</OrderQty>
+          <QtyUOM>PC</QtyUOM>
+        </Quantity>
+        <Weight>
+          <PlannedWeight>2500.0000</PlannedWeight>
+          <WeightUOM>LB</WeightUOM>
+        </Weight>
+        <Volume>
+          <PlannedVolume>194.4000</PlannedVolume>
+          <VolumeUOM>FT3</VolumeUOM>
+        </Volume>
+        <Size>
+          <Quantity>100</Quantity>
+          <QuantityUOM>BOX</QuantityUOM>
+        </Size>
+      </LineItem>
+      <LineItem>
+        <LineItemId>2</LineItemId>
+        <ItemName>1054</ItemName>
+        <Description>ONIONS, (50 LBS.)</Description>
+        <ProductClassCode>FOOD</ProductClassCode>
+        <ProtectionLevelCode>DRY</ProtectionLevelCode>
+        <CommodityClassCode>FAK</CommodityClassCode>
+        <IsReadyToShip>FALSE</IsReadyToShip>
+        <IsCancelled>FALSE</IsCancelled>
+        <IsClosed></IsClosed>
+        <IsHazmat>FALSE</IsHazmat>
+        <ExtSysLineItemId></ExtSysLineItemId>
+        <Quantity>
+          <OrderQty>50</OrderQty>
+          <QtyUOM>PC</QtyUOM>
+        </Quantity>
+        <Weight>
+          <PlannedWeight>2500.0000</PlannedWeight>
+          <WeightUOM>LB</WeightUOM>
+        </Weight>
+        <Volume>
+          <PlannedVolume>145.8500</PlannedVolume>
+          <VolumeUOM>FT3</VolumeUOM>
+        </Volume>
+        <Size>
+          <Quantity>50</Quantity>
+          <QuantityUOM>BAG</QuantityUOM>
+        </Size>
+      </LineItem>
+      <LineItem>
+        <LineItemId>3</LineItemId>
+        <ItemName>1055</ItemName>
+        <Description>TOMATOES, ROMA (10 LBS.)</Description>
+        <ProductClassCode>FOOD</ProductClassCode>
+        <ProtectionLevelCode>REFR</ProtectionLevelCode>
+        <CommodityClassCode>FAK</CommodityClassCode>
+        <IsReadyToShip>FALSE</IsReadyToShip>
+        <IsCancelled>FALSE</IsCancelled>
+        <IsClosed></IsClosed>
+        <IsHazmat>FALSE</IsHazmat>
+        <ExtSysLineItemId></ExtSysLineItemId>
+        <Quantity>
+          <OrderQty>125</OrderQty>
+          <QtyUOM>PC</QtyUOM>
+        </Quantity>
+        <Weight>
+          <PlannedWeight>1250.0000</PlannedWeight>
+          <WeightUOM>LB</WeightUOM>
+        </Weight>
+        <Volume>
+          <PlannedVolume>66.5000</PlannedVolume>
+          <VolumeUOM>FT3</VolumeUOM>
+        </Volume>
+        <Size>
+          <Quantity>125</Quantity>
+          <QuantityUOM>BOX</QuantityUOM>
+        </Size>
+      </LineItem>
+    </Order>
+  </Message>
+</tXML>

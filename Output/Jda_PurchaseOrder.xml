@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="ASCII"?><CISDocument xmlns:xalan="http://xml.apache.org/xslt" xmlns:func="http://exslt.org/functions">
+    <ApiHeader>
+        <OperationName>processShipmentOrderMaintain</OperationName>
+    </ApiHeader>
+    <ProcessShipmentOrderCreate>
+        <Shipment>
+            <ShipmentNumber>NC0000045657</ShipmentNumber>
+            <CustomerCode>10003</CustomerCode>
+            <ShipmentDescription>PO</ShipmentDescription>
+            <ShipFromLocationTypeEnumVal>STT_DC</ShipFromLocationTypeEnumVal>
+            <ShipFromLocationCode>SOUTH MILLMAIN</ShipFromLocationCode>
+            <ShipToLocationTypeEnumVal>STT_DC</ShipToLocationTypeEnumVal>
+            <ShipToLocationCode>QCCNC</ShipToLocationCode>
+            <PickupFromDateTime>
+							tESTING
+							  
+							
+						</PickupFromDateTime>
+            <PickupToDateTime>02/24/19 23:59</PickupToDateTime>
+            <DeliveryFromDateTime>02/24/19 00:01</DeliveryFromDateTime>
+            <DeliveryToDateTime>02/24/19 23:59</DeliveryToDateTime>
+            <CommodityCode>TRUE</CommodityCode>
+            <FreightTermsEnumVal>0</FreightTermsEnumVal>
+            <SystemPlanID>9900</SystemPlanID>
+            <ExecuteAPRatingFlag>false</ExecuteAPRatingFlag>
+            <ShipmentInputSourceEnumVal>IS_EXTERNAL_API</ShipmentInputSourceEnumVal>
+            <HoldFlag>false</HoldFlag>
+            <IgnoreContainersFlag>false</IgnoreContainersFlag>
+            <ShipmentEntryModeEnumVal>TOM_ITEM_LEVEL_DETAIL</ShipmentEntryModeEnumVal>
+            <Container>
+                <ContainerTypeCode>ZZ</ContainerTypeCode>
+                <Quantity>1</Quantity>
+                <IgnoreShipmentItemsFlag>false</IgnoreShipmentItemsFlag>
+                <ContainerShippingInformation>
+                    <Volume>109.3750</Volume>
+                </ContainerShippingInformation>
+                <ShipmentItem>
+                    <ShipmentItemNumber>1</ShipmentItemNumber>
+                    <ItemNumber>1051</ItemNumber>
+                    <ItemDescription>MUSHROOM, FRESH</ItemDescription>
+                    <ItemQuantity>175</ItemQuantity>
+                    <NominalWeight>1925.0000</NominalWeight>
+                    <ItemOrderValue>0</ItemOrderValue>
+                    <ItemDeclaredValue>0</ItemDeclaredValue>
+                    <OriginCountryCode>USA</OriginCountryCode>
+                    <ReferenceNumberStructure>
+                        <ReferenceNumberTypeCode>PRO_CLS_CODE</ReferenceNumberTypeCode>
+                        <ReferenceNumber>FOOD</ReferenceNumber>
+                    </ReferenceNumberStructure>
+                    <ReferenceNumberStructure>
+                        <ReferenceNumberTypeCode>PRO_LEV_CODE</ReferenceNumberTypeCode>
+                        <ReferenceNumber>REFR</ReferenceNumber>
+                    </ReferenceNumberStructure>
+                    <ReferenceNumberStructure>
+                        <ReferenceNumberTypeCode>COM_CLS_CODE</ReferenceNumberTypeCode>
+                        <ReferenceNumber>FAK</ReferenceNumber>
+                    </ReferenceNumberStructure>
+                </ShipmentItem>
+            </Container>
+        </Shipment>
+        <IgnoreAllShipmentReferenceNumbersFlag>false</IgnoreAllShipmentReferenceNumbersFlag>
+        <ExecuteAPRatingFlag>false</ExecuteAPRatingFlag>
+        <Shipment>
+            <ShipmentNumber>NC0000045658</ShipmentNumber>
+            <CustomerCode>10003</CustomerCode>
+            <ShipmentDescription>PO</ShipmentDescription>
+            <ShipFromLocationTypeEnumVal>STT_DC</ShipFromLocationTypeEnumVal>
+            <ShipFromLocationCode>CUSTOM PAKQCCNC</ShipFromLocationCode>
+            <ShipToLocationTypeEnumVal>STT_DC</ShipToLocationTypeEnumVal>
+            <ShipToLocationCode>QCCNC</ShipToLocationCode>
+            <PickupFromDateTime>
+							tESTING
+							  
+							
+						</PickupFromDateTime>
+            <PickupToDateTime>02/24/19 23:59</PickupToDateTime>
+            <DeliveryFromDateTime>02/24/19 00:01</DeliveryFromDateTime>
+            <DeliveryToDateTime>02/24/19 23:59</DeliveryToDateTime>
+            <CommodityCode>TRUE</CommodityCode>
+            <FreightTermsEnumVal>0</FreightTermsEnumVal>
+            <SystemPlanID>9900</SystemPlanID>
+            <ExecuteAPRatingFlag>false</ExecuteAPRatingFlag>
+            <ShipmentInputSourceEnumVal>IS_EXTERNAL_API</ShipmentInputSourceEnumVal>
+            <HoldFlag>false</HoldFlag>
+            <IgnoreContainersFlag>false</IgnoreContainersFlag>
+            <ShipmentEntryModeEnumVal>TOM_ITEM_LEVEL_DETAIL</ShipmentEntryModeEnumVal>
+            <Container>
+                <ContainerTypeCode>ZZ</ContainerTypeCode>
+                <Quantity>1</Quantity>
+                <IgnoreShipmentItemsFlag>false</IgnoreShipmentItemsFlag>
+                <ContainerShippingInformation>
+                    <Volume>194.4000</Volume>
+                    <Volume>145.8500</Volume>
+                    <Volume>66.5000</Volume>
+                </ContainerShippingInformation>
+                <ShipmentItem>
+                    <ShipmentItemNumber>1</ShipmentItemNumber>
+                    <ItemNumber>1053</ItemNumber>
+                    <ItemDescription>PEPPERS, GREEN (25 LBS.)</ItemDescription>
+                    <ItemQuantity>100</ItemQuantity>
+                    <NominalWeight>2500.0000</NominalWeight>
+                    <ItemOrderValue>0</ItemOrderValue>
+                    <ItemDeclaredValue>0</ItemDeclaredValue>
+                    <OriginCountryCode>USA</OriginCountryCode>
+                    <ReferenceNumberStructure>
+                        <ReferenceNumberTypeCode>PRO_CLS_CODE</ReferenceNumberTypeCode>
+                        <ReferenceNumber>FOOD</ReferenceNumber>
+                    </ReferenceNumberStructure>
+                    <ReferenceNumberStructure>
+                        <ReferenceNumberTypeCode>PRO_LEV_CODE</ReferenceNumberTypeCode>
+                        <ReferenceNumber>REFR</ReferenceNumber>
+                    </ReferenceNumberStructure>
+                    <ReferenceNumberStructure>
+                        <ReferenceNumberTypeCode>COM_CLS_CODE</ReferenceNumberTypeCode>
+                        <ReferenceNumber>FAK</ReferenceNumber>
+                    </ReferenceNumberStructure>
+                    <ShipmentItemNumber>2</ShipmentItemNumber>
+                    <ItemNumber>1054</ItemNumber>
+                    <ItemDescription>ONIONS, (50 LBS.)</ItemDescription>
+                    <ItemQuantity>50</ItemQuantity>
+                    <NominalWeight>2500.0000</NominalWeight>
+                    <ItemOrderValue>0</ItemOrderValue>
+                    <ItemDeclaredValue>0</ItemDeclaredValue>
+                    <OriginCountryCode>USA</OriginCountryCode>
+                    <ReferenceNumberStructure>
+                        <ReferenceNumberTypeCode>PRO_CLS_CODE</ReferenceNumberTypeCode>
+                        <ReferenceNumber>FOOD</ReferenceNumber>
+                    </ReferenceNumberStructure>
+                    <ReferenceNumberStructure>
+                        <ReferenceNumberTypeCode>PRO_LEV_CODE</ReferenceNumberTypeCode>
+                        <ReferenceNumber>DRY</ReferenceNumber>
+                    </ReferenceNumberStructure>
+                    <ReferenceNumberStructure>
+                        <ReferenceNumberTypeCode>COM_CLS_CODE</ReferenceNumberTypeCode>
+                        <ReferenceNumber>FAK</ReferenceNumber>
+                    </ReferenceNumberStructure>
+                    <ShipmentItemNumber>3</ShipmentItemNumber>
+                    <ItemNumber>1055</ItemNumber>
+                    <ItemDescription>TOMATOES, ROMA (10 LBS.)</ItemDescription>
+                    <ItemQuantity>125</ItemQuantity>
+                    <NominalWeight>1250.0000</NominalWeight>
+                    <ItemOrderValue>0</ItemOrderValue>
+                    <ItemDeclaredValue>0</ItemDeclaredValue>
+                    <OriginCountryCode>USA</OriginCountryCode>
+                    <ReferenceNumberStructure>
+                        <ReferenceNumberTypeCode>PRO_CLS_CODE</ReferenceNumberTypeCode>
+                        <ReferenceNumber>FOOD</ReferenceNumber>
+                    </ReferenceNumberStructure>
+                    <ReferenceNumberStructure>
+                        <ReferenceNumberTypeCode>PRO_LEV_CODE</ReferenceNumberTypeCode>
+                        <ReferenceNumber>REFR</ReferenceNumber>
+                    </ReferenceNumberStructure>
+                    <ReferenceNumberStructure>
+                        <ReferenceNumberTypeCode>COM_CLS_CODE</ReferenceNumberTypeCode>
+                        <ReferenceNumber>FAK</ReferenceNumber>
+                    </ReferenceNumberStructure>
+                </ShipmentItem>
+            </Container>
+        </Shipment>
+        <IgnoreAllShipmentReferenceNumbersFlag>false</IgnoreAllShipmentReferenceNumbersFlag>
+        <ExecuteAPRatingFlag>false</ExecuteAPRatingFlag>
+    </ProcessShipmentOrderCreate>
+</CISDocument>
