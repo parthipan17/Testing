@@ -1,3 +1,38 @@
+package constant;
+
+import java.io.File;
+
+import javax.xml.transform.Transformer;
+import javax.xml.transform.TransformerFactory;
+import javax.xml.transform.stream.StreamResult;
+import javax.xml.transform.stream.StreamSource;
+
+import org.apache.log4j.Logger;
+
+public class spliting {
+    	
+    	final static Logger logger = Logger.getLogger(spliting.class);
+    	public static void main(String[] args) {
+    		try {
+    			File inputfile = new File("C:/Users/791729/eclipse-workspace/PJI/SampleApplication/src/main/java/constant/ISOTRAK_Src.xml");
+    			File interfile = new File("C:/Users/791729/eclipse-workspace/PJI/SampleApplication/src/main/java/constant/InBoundFromIsotrak.xsl");
+    			File outputfile = new File("C:/Users/791729/eclipse-workspace/PJI/SampleApplication/src/main/java/constant/JDA_testing.xml");    			    		  		    			
+    			
+    			StreamSource inpSource = new StreamSource(inputfile);
+    			StreamSource styleSource = new StreamSource(interfile);
+    			Transformer transformer = TransformerFactory.newInstance().newTransformer(styleSource);
+    			transformer.transform(inpSource, new StreamResult(outputfile));
+    			
+    			System.out.println("Testing splititn");
+    		}
+    		catch (Exception e) {
+    			logger.error("Error>>>", e);
+    		}
+
+    	}
+}
+-------------------------------XSL-------------------------------------
+
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="3.0" 
 xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
