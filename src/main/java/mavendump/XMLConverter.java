@@ -47,23 +47,48 @@ exclude-result-prefixes="xalan fn">
 <xsl:strip-space elements="*" />
 
 <xsl:template match="/">
-  <xsl:apply-templates select="JobExport/Jobs/Job/VisitsOnly/Visit"/>
+  <xsl:apply-templates select="JobExport/Jobs/Job"/>
+</xsl:template>
+
+<xsl:template match = "JobExport/Jobs/Job"> 
+   <xsl:apply-templates select = "VisitsOnly" /> 
+   <xsl:apply-templates select = "Visit" />  
+</xsl:template>
+
+<xsl:template match="VisitsOnly">
+<xsl:variable name="vo" as="element(VisitsOnly)">
+    <xsl:value-of select="."/>
+    <xsl:with-param name="pasval" select="$vo" />
+</xsl:variable>
 </xsl:template>
 
 <xsl:template match="Visit">
-  <xsl:variable name="v" as="element(Visit)">
+<xsl:variable name="v" as="element(Visit)">
     <xsl:copy-of select="."/>
-  </xsl:variable>
-  
+</xsl:variable>
+<xsl:variable name="voo" select="$vo" />
   
   <xsl:choose>
   <xsl:when test="$v/Actual">
-    <xsl:result-document href="{@id}.xml">
-      <xsl:copy-of select="$v"/>
+    <xsl:result-document method="xml" href="{@id}.xml">
+      <CISDocument>
+			<ApiHeader>
+				<OperationName>processLoadUpdateProgress</OperationName>
+			</ApiHeader>
+		<LoadUpdateProgressData>
+			<SystemLoadID><xsl:value-of select="$voo/JobReference/UserReference"/></SystemLoadID>
+			<CarrierCode>TXPK</CarrierCode>
+			<SECInformation>
+				<SECCode>ISOTRAK</SECCode>
+				<EventText>Duration:<xsl:value-of select="$v/Duration"/>|ActualDuration:<xsl:value-of select="$v/Actual/Duration"/>|ActualDistance:<xsl:value-of select="$v/Actual/Distance"/>|Start:<xsl:value-of select="$v/Actual/Start"/>|End:<xsl:value-of select="$v/Actual/End"/></EventText>	
+			</SECInformation>
+      	</LoadUpdateProgressData>
+      </CISDocument>
+<!--       <xsl:copy-of select="$v"/> -->
     </xsl:result-document>
   </xsl:when>
   <xsl:otherwise>
-    <xsl:result-document href="{@id}.xml">
+    <xsl:result-document method="xml" href="{@id}.xml">
       <xsl:copy-of select="$v"/>
     </xsl:result-document>
   </xsl:otherwise>
@@ -72,7 +97,78 @@ exclude-result-prefixes="xalan fn">
 
 </xsl:template>
 </xsl:stylesheet>
+<!-- <xsl:template name="actual" match="Actual">
+  <CISDocument>
+			<ApiHeader>
+				<OperationName>processLoadUpdateProgress</OperationName>
+			</ApiHeader>
+		<LoadUpdateProgressData>
+		<xsl:for-each select="JobExport/Jobs/Job">
+			<SystemLoadID>
+			<xsl:for-each select="JobReference">
+				<xsl:value-of select="UserReference"/>
+			</xsl:for-each>
+			</SystemLoadID>
+			<CarrierCode>TXPK</CarrierCode>
+			<SECInformation>
+				<SECCode>ISOTRAK</SECCode>
+				<xsl:for-each select="VisitsOnly/Visit">
+				<EventText>
+					Duration:<xsl:value-of select="Duration"/>|
+					<xsl:for-each select="Actual"> 
+					ActualDuration:<xsl:value-of select="Duration"/>|
+					ActualDistance:<xsl:value-of select="Distance"/>|
+					Start:<xsl:value-of select="Start"/>|
+					End:<xsl:value-of select="End"/>
+					</xsl:for-each>
+				</EventText>				
+				<MovementDateTime>
+					<xsl:value-of select="Due"/>
+				</MovementDateTime>
+				<ShippingLocationCode>
+					<xsl:for-each select="PlaceReference">
+						<xsl:value-of select="UserReference"/>
+					</xsl:for-each>
+				</ShippingLocationCode>
+				<ShippingLocationTypeEnumVal>SPT_DC</ShippingLocationTypeEnumVal>
+				</xsl:for-each>
+			</SECInformation>
+		</xsl:for-each>
+		</LoadUpdateProgressData>
+		</CISDocument>
+</xsl:template>
 
+
+<xsl:template name="eta" match="ETA">
+  		<CISDocument>
+			<ApiHeader>
+				<OperationName>processSetStopETA</OperationName>
+			</ApiHeader>	
+		<StopUpdateProgressData>
+		<xsl:for-each select="JobExport/Jobs/Job">
+			<CarrierCode>TXPK</CarrierCode>
+			<SystemLoadID>
+			<xsl:for-each select="JobReference">
+				<xsl:value-of select="UserReference"/>
+			</xsl:for-each>
+			</SystemLoadID>
+			<ShippingLocationCode>
+				<xsl:for-each select="VisitsOnly/Visit/PlaceReference">
+					<xsl:value-of select="UserReference"/>
+				</xsl:for-each>
+			</ShippingLocationCode>
+			<StopEvent>
+				<EventCode>RETA</EventCode>
+				<xsl:for-each select="VisitsOnly/Visit">		
+					<MovementDateTime><xsl:value-of select="Due"/></MovementDateTime>
+					<EstimatedDateTimeAtStop><xsl:value-of select="ETA"/></EstimatedDateTimeAtStop>
+					<EventText>Duration:<xsl:value-of select="Duration"/></EventText>
+				</xsl:for-each>
+			</StopEvent>
+		</xsl:for-each>
+		</StopUpdateProgressData>
+		</CISDocument>
+</xsl:template> -->
 
 -----------------------------INPUT FILE------------------------------
 	
